@@ -31,26 +31,28 @@
 	<div align="center">
 		<table style="width:50%" class="table table-bordered table-hover  table-condensed">
 			<tr>
-    			<td>Model Name: </td>
-    			<td><%=automobile.getName() %></td> 
+    			<td><%=automobile.getName() %></td>
+    			<td>base price</td>
+    			<td><%=automobile.getBasePrice() %></td> 
   			</tr>
   			<tr>
   				<td>Make:</td>
   				<td><%=automobile.getMake() %></td>
+  				<td></td>
   			</tr>
   			<tr>
-  				<td>Base price:</td>
-  				<td><%=automobile.getBasePrice() %></td>
   			</tr>
   			<%for(String key : keys){ %>
   				<tr>
   					<td><%=key %></td>
   					<td><%=request.getParameter(key) %></td>
+  					<td><%=automobile.getOptionChoicePrice(key) %>
   				</tr>
   			<%} %>
   			<tr>
   				<td>Total Price</td>
-  				<td><%=automobile.getTotalPrice() %></td>
+  				<td></td>
+  				<td>$<%=automobile.getTotalPrice() %></td>
   			</tr>
 		</table>
 	</div>

@@ -171,7 +171,9 @@ public class Automobile implements Serializable{
 	
 	/*
 	 * get the price of option in option set whose name is setName
-	 * @param	setName	the name of option set
+	 * @param	setName	
+	 * 			the name of option set
+	 * 
 	 * @return	the price of option
 	 * */
 	public int getOptionChoicePrice(String setName){
